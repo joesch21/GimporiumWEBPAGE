@@ -1,0 +1,120 @@
+/* General styles */
+body {
+    background-image: url('images/IMG_3404.PNG');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: -1; /* Places the overlay behind the content */
+}
+
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: #4CAF50;
+}
+
+/* Main content section */
+.main-content {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.main-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4CAF50;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Grid layout for links */
+.link-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.link-grid a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    padding: 10px;
+    border-radius: 10px; /* Makes the link area rounded */
+}
+
+.link-grid a:hover {
+    background-color: #2e2e2e; /* Adds a subtle background color on hover */
+    transform: scale(1.05); /* Slightly scales the entire clickable area */
+}
+
+.link-grid img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.link-grid img:hover {
+    transform: scale(1.1); /* Keeps the hover effect for the image */
+}
+
+.link-grid p {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+}
